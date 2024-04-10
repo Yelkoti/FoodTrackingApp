@@ -2,7 +2,7 @@ import { StyleSheet, Text, View } from "react-native";
 import { AntDesign } from '@expo/vector-icons';
 
 const FoodItem = ({ item }) => {
-  return (
+  return ( 
     <View style={styles.container}>
       <View style={styles.innerContainer}>
         <Text style={styles.headerText}>{item.label}</Text>
@@ -15,7 +15,7 @@ const FoodItem = ({ item }) => {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: "gainsboro",
+    backgroundColor: "#f6f6f8",
     padding: 10,
     flexDirection: "row",
     justifyContent: "space-between",
