@@ -5,8 +5,8 @@ const FoodItem = ({ item }) => {
   return (
     <View style={styles.container}>
       <View style={styles.innerContainer}>
-        <Text>{item.label}</Text>
-        <Text>{item.cal}, {item.brand}</Text>
+        <Text style={styles.headerText}>{item.label}</Text>
+        <Text style={styles.descriptionText}>{item.cal}, {item.brand}</Text>
       </View>
       <AntDesign name="pluscircleo" size={24} color="royalblue" />
     </View>
@@ -23,6 +23,13 @@ const styles = StyleSheet.create({
     borderRadius: 8,
     marginHorizontal: 8,
     marginVertical: 2
+  },
+  headerText: {
+    fontWeight: "bold",
+    fontSize: 16
+  },
+  descriptionText: {
+    color: "dimgray",
   },
   innerContainer: {
     flex: 1,
